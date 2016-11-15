@@ -33,6 +33,7 @@
 	echo "<script language=\"javascript\" type=\"text/javascript\">";
 
     echo "function test(tableNo) {
+    tableNo = encodeURIComponent(tableNo.trim());
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (xmlhttp.readyState==4&&xmlhttp.status==200) {
@@ -69,7 +70,7 @@
 		echo "<br><h5>";
 		echo $row["time"];	
 		echo "<br><br></div><div class=\"col-sm-3\" >";
-		echo "<br><button onclick=\"test(".$row["btnID"].")\" type=\"button\" class=\"btn btn-primary btn-lg active\" id=\"attended\" ><span class=\"glyphicon glyphicon-ok\"></span></button>";	
+		echo "<br><button onclick=\"test('".$row["tableName"]."')\" type=\"button\" class=\"btn btn-primary btn-lg active\" id=\"attended\" ><span class=\"glyphicon glyphicon-ok\"></span></button>";	
 		echo "</div></div></div><br>";
 		echo "";
 		echo "";

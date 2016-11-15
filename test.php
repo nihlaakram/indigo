@@ -16,7 +16,7 @@ $q = $_GET['q'];
 
 	}
 
- $bs ="update requests set status=\"1\" where btnID=".$q;
+ $bs ="update requests set status=\"1\" where tableName='".$q."'";
    if ($conn->query($bs) === TRUE) {
     //echo "Record updated successfully";
    } else {
