@@ -54,7 +54,7 @@
 	echo "</div>";
 
 	echo "<div class=\"col-sm-8\">";
-	echo "<h1>Flaming Indigo : TGIF</h1>";
+	echo "<h1>TGIF</h1>";
 	echo "<br/>";
 
 
@@ -65,12 +65,12 @@
 		// output data of each row
 		while($row = $result->fetch_assoc()) {
 	
-		echo "<div class=\"container-fluid\" id=\"display_content\"><div class=\"row\"><div class=\"col-sm-9\"><br><h5>";
+		echo "<div class=\"container-fluid\" id=\"display_content\"><div class=\"row\"><div class=\"col-sm-9\"><br><h4>";
 		echo  $row["tableName"]; 
-		echo "<br><h5>";
+		echo "<br><h4>";
 		echo $row["time"];	
 		echo "<br><br></div><div class=\"col-sm-3\" >";
-		echo "<br><button onclick=\"test('".$row["tableName"]."')\" type=\"button\" class=\"btn btn-primary btn-lg active\" id=\"attended\" ><span class=\"glyphicon glyphicon-ok\"></span></button>";	
+		echo "<br><button onclick=\"test('".$row["tableName"]."')\" type=\"button\" class=\"btn btn-primary btn-lg active\" id=\"attended\" ><span class=\"glyphicon glyphicon-ok\" ></span></button>";	
 		echo "</div></div></div><br>";
 		echo "";
 		echo "";

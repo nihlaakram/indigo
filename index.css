@@ -1,3 +1,18 @@
 #display_content {
     background-color: #edeeef;
 }
+
+h1{
+    color: red;
+    font-size: #40px;
+}
+
+.glyphicon {
+    background-color: lightcoral;
+   // border-bottom-color: red;
+}
+
+#attended{
+    background-color: lightcoral;
+    border-color: lightcoral;
+}
